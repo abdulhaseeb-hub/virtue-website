@@ -13743,8 +13743,9 @@
  .navbar-mobile .end{
     display: block !important;
  }
- .navbar-mobile  .end{
+ .navbar-mobile  .logo{
     display: block !important;
+    margin-top: 10px !important;
  }
  .navbar-mobile .getstarted:focus {
      margin: 15px;

@@ -157,6 +157,7 @@
     this.classList.toggle('bi-list')
     this.classList.toggle('bi-x')
     this.classList.toggle('fa-times')
+    this.classList.toggle('fs-30')
   })
 
   /**
