@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="72" height="60" version="1.1" viewBox="0 0 72 60" xmlns="http://www.w3.org/2000/svg">
- <defs>
-  <style>.a{fill:#fff;}</style>
- </defs>
- <path transform="translate(0 -3)" d="m69 30.03-15-0.03c-1.6548 0.0049-2.9951 1.3452-3 3v27c0.0049 1.6548 1.3452 2.9951 3 3h15c1.6548-0.0049 2.9951-1.3452 3-3v-27c-0.0072-1.649-1.351-2.9794-3-2.97zm0 26.97h-15v-21h15zm-9-54h-54c-3.3185-0.011676-6.0117 2.6815-6 6v36c0 3.3137 2.6863 6 6 6h21v6h-6v6h24v-6h-6v-6h6v-6h-39v-36h54v15h6v-15c0-3.3137-2.6863-6-6-6zm-24.09 21-2.91-9-2.91 9h-9.09l7.41 5.28-2.82 8.73 7.41-5.4 7.41 5.4-2.82-8.73 7.41-5.28z" color="#000000" color-rendering="auto" dominant-baseline="auto" fill="#fff" image-rendering="auto" shape-rendering="auto" solid-color="#000000" stop-color="#000000" style="font-feature-settings:normal;font-variant-alternates:normal;font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal;font-variant-position:normal;font-variation-settings:normal;inline-size:0;isolation:auto;mix-blend-mode:normal;shape-margin:0;shape-padding:0;text-decoration-color:#000000;text-decoration-line:none;text-decoration-style:solid;text-indent:0;text-orientation:mixed;text-transform:none;white-space:normal"/>
-</svg>
