@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="51.429" height="60" version="1.1" viewBox="0 0 51.429 60" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <style>.a{fill:#fff;}</style>
+ </defs>
+ <path transform="translate(-4.5 -3)" d="m50.214 3h-40c-3.156-5.525e-4 -5.7146 2.558-5.714 5.714v40c-5.525e-4 3.156 2.558 5.7146 5.714 5.714h11.429l8.571 8.572 8.571-8.571h11.429c3.1519-0.0093 5.7047-2.5621 5.714-5.714v-40c-0.008787-3.1523-2.5617-5.7057-5.714-5.715zm-20 9.429c6.8729 0 10.314 8.309 5.4543 13.168-4.8593 4.8593-13.168 1.4186-13.168-5.4543 0.0028-4.2592 3.4548-7.7112 7.714-7.714zm17.143 30.571h-34.286v-2.571c0-5.714 11.429-8.857 17.143-8.857s17.143 3.143 17.143 8.857z" color="#000000" color-rendering="auto" dominant-baseline="auto" fill="#fff" image-rendering="auto" shape-rendering="auto" solid-color="#000000" stop-color="#000000" style="font-feature-settings:normal;font-variant-alternates:normal;font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal;font-variant-position:normal;font-variation-settings:normal;inline-size:0;isolation:auto;mix-blend-mode:normal;shape-margin:0;shape-padding:0;text-decoration-color:#000000;text-decoration-line:none;text-decoration-style:solid;text-indent:0;text-orientation:mixed;text-transform:none;white-space:normal"/>
+</svg>
