@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+
+// Absracts
+@import "abstracts/variables";
+
+// Own helpers. Contains variables, mixins, functions, etc.
+@import "_helpers.scss";
+
+// Global styles
+@import "_global.scss";
+
+// Base styles
+@import "base/_utilities.scss";
+
+// Blocks
+// When using BEM, give each block its own file under a 'blocks' directory for 
+// easier management
+@import "layout/_header.scss";
+@import "layout/_footer.scss";
+
+//Pages 
+@import "pages/_home.scss";

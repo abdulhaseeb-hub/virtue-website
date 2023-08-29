@@ -1,0 +1,37 @@
+$font-family-headings: 'Atyp Display';
+$font-text: 'Atyp Display';
+
+$primary: #194755;
+$secondary: #D2788A;
+$brand-blue: #5A789E;
+$brand-yellow: #F69D35;
+$brand-brown: #CDA993;
+$brand-green: #92A7A3;
+$gray: #E3E9EC;
+$white: #fff;
+
+$body-font-color: #000;
+$mobile-devices: 576px;
+$tablet-devices: 768px;
+$medium-devices: 1024px;
+:root {
+    --primary: #{$primary};
+    --secondary: #{$secondary};
+    --brand-blue: #{$brand-blue};
+    --brand-yellow: #{$brand-yellow};
+    --brand-brown: #{$brand-brown};
+    --brand-green: #{$brand-green};
+    --gray: #{$gray};
+
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+}
+
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+$font-weight-extrabold: 800;
