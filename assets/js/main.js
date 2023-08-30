@@ -21,7 +21,122 @@
 (function() {
 
   
+  const lenis = new Lenis({
+    duration: 1.5,
+    easing: (t)=>Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+    // https://www.desmos.com/calculator/brs54l4xou
+    direction: 'vertical',
+    // vertical, horizontal
+    gestureDirection: 'vertical',
+    // vertical, horizontal, both
+    smooth: true,
+    mouseMultiplier: 1,
+    smoothTouch: false,
+    touchMultiplier: 1,
+    infinite: false,
+})
 
+//get scroll value
+lenis.on('scroll', ({scroll, limit, velocity, direction, progress})=>{
+    console.log({
+        scroll,
+        limit,
+        velocity,
+        direction,
+        progress
+    })
+}
+)
+
+function raf(time) {
+    lenis.raf(time)
+    requestAnimationFrame(raf)
+}
+
+requestAnimationFrame(raf)
+
+window.addEventListener("DOMContentLoaded", (event)=>{
+
+  // Split text into spans
+  let typeSplit = new SplitType("[text-split]",{
+      types: "words, chars",
+      tagName: "span"
+  });
+
+  // Link timelines to scroll position
+  function createScrollTrigger(triggerElement, timeline) {
+      // Reset tl when scroll out of view past bottom of screen
+      ScrollTrigger.create({
+          trigger: triggerElement,
+          start: "top bottom",
+          onLeaveBack: ()=>{
+              timeline.progress(0);
+              timeline.pause();
+          }
+      });
+      // Play tl when scrolled into view (60% from top of screen)
+      ScrollTrigger.create({
+          trigger: triggerElement,
+          start: "top 80%",
+          onEnter: ()=>timeline.play()
+      });
+      }
+
+      $("[words-slide-from-right]").each(function(index) {
+          let tl = gsap.timeline({
+              paused: true
+          });
+          tl.from($(this).find(".word"), {
+              opacity: 0,
+              x: "1em",
+              duration: 0.8,
+              ease: "power2.out",
+              stagger: {
+                  amount: 0.2
+              }
+          });
+          createScrollTrigger($(this), tl);
+      });
+
+      $("[letters-slide-down]").each(function(index) {
+          let tl = gsap.timeline({
+              paused: true
+          });
+          tl.from($(this).find(".char"), {
+              yPercent: -120,
+              duration: 0.4,
+              ease: "power1.out",
+              stagger: {
+                  amount: 0.8
+              }
+          });
+          createScrollTrigger($(this), tl);
+      });
+
+      $("[scrub-each-word]").each(function(index) {
+          let tl = gsap.timeline({
+              scrollTrigger: {
+                  trigger: $(this),
+                  start: "top 70%",
+                  end: "top center",
+                  scrub: true
+              }
+          });
+          tl.from($(this).find(".char"), {
+              opacity: 0.2,
+              duration: 1,
+              ease: "power1.out",
+              stagger: {
+                  each: 0.7
+              }
+          });
+      });
+
+      // Avoid flash of unstyled content
+      gsap.set("[text-split]", {
+          opacity: 1
+      });
+  });
   
 
   // document.addEventListener("DOMContentLoaded", function() {
